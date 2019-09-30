@@ -2,12 +2,25 @@
 <html>
 <head>
 <style>
+
+    #containerDiv {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     input,button,h1 {
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: sans-serif;
+        font-weight: bold;
         margin: 5px;
+    }
+
+    input,button {
+        background-color: rgb(223, 217, 217);
     }
 
 .cell {
@@ -23,16 +36,16 @@
 </style>
 </head>
 <body>
-
-<h1>Acme Grid Maker</h1>
+    
+<div id='containerDiv'>
 
 <div>
+    <h1>Acme Grid Maker</h1>
     <input type="text" name="rows" id='row-input' size="40">
     <input type="text" name="columns" id = 'column-input' size="40">
     <button>Make Grid</button>
+    <div id="grid-container"></div>
 </div>
-<div id="grid-container"></div>
-
 </body>
 <script>
         let gridContainer = document.querySelector('#grid-container')
