@@ -56,7 +56,7 @@
                 newRow.classList.add("row")
                 for(let j = 0; j < columns; j++){
                     const newCell = document.createElement('div')
-                    newCell.setAttribute("id", `row : ${i + 1} column : ${j + 1}`)
+                    newCell.setAttribute("id", `row : ${i} column : ${j}`)
                     newCell.classList.add("cell")
                     newRow.appendChild(newCell)
                     newCell.addEventListener('click', ev => {
