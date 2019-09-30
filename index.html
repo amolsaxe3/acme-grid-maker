@@ -2,6 +2,11 @@
 <html>
 <head>
 <style>
+    p {
+        font-family: sans-serif;
+        /* font-weight: bold; */
+        font-size: 20px;
+    }
     #grid-container, #containerDiv {
         display: flex;
         flex-direction: column;
@@ -61,7 +66,7 @@
                 newRow.classList.add("row")
                 for(let j = 0; j < columns; j++){
                     const newCell = document.createElement('div')
-                    newCell.setAttribute("id", `row : ${i} column : ${j}`)
+                    newCell.setAttribute("id", `rTdx: ${i} cIdx: ${j}`)
                     newCell.classList.add("cell")
                     newRow.appendChild(newCell)
                     newCell.addEventListener('click', ev => {
