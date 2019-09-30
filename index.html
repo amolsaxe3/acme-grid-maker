@@ -59,14 +59,14 @@
 </body>
 <script>
         let gridContainer = document.querySelector('#grid-container')
-        const createGrid = (rows, columns) => {           
+        const createGrid = (rows, columns) => {        
             let newText = document.createElement('p')
             for(let i = 0; i < rows; i++){
                 const newRow = document.createElement('div')
                 newRow.classList.add("row")
                 for(let j = 0; j < columns; j++){
                     const newCell = document.createElement('div')
-                    newCell.setAttribute("id", `rTdx: ${i} cIdx: ${j}`)
+                    newCell.setAttribute("id", `rIdx: ${i} cIdx: ${j}`)
                     newCell.classList.add("cell")
                     newRow.appendChild(newCell)
                     newCell.addEventListener('click', ev => {
